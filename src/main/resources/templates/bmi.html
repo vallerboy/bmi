@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div style="text-align: center;">
+      <h1 th:text="${info}"></h1>
+
+
+      <form action="/bmi" method="post">
+         Waga: <input type="text" name="weight"> <br/>
+         Wzrost: <input type="text" name="height"> <br/>
+          <input type="submit" value="Wyślij"/>
+      </form>
+  </div>
+</body>
+</html>

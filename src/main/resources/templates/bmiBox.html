@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <div style="text-align: center;">
+
+            <h1 th:text="${bmi}"></h1> <br/>
+
+            <th:block th:switch="${info}">
+                <div th:case="'0'" style="height: 200px; width: 200px; background-color: red"></div>
+                <div th:case="'1'" style="height: 200px; width: 200px; background-color: green"></div>
+                <div th:case="'2'" style="height: 200px; width: 200px; background-color: deeppink"></div>
+            </th:block>
+        </div>
+</body>
+</html>
